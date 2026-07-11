@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+      .cert { border: 10px solid #eee; padding: 30px; }
+      .title { font-size: 28px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div class="cert">
+      <img src="/static/images/logo.png" alt="Logo" style="height:80px;"/>
+      <h1 class="title"><%= centreName %></h1>
+      <p>Certificate No: <%= certNo %></p>
+      <h2>This is to certify that</h2>
+      <h3>Intern ID: <%= internId %></h3>
+      <p>Has completed the training.</p>
+      <p>Date Issued: <%= issuedDate %></p>
+      <img src="<%= qrPath || ('/static/images/qr-placeholder.png') %>" alt="QR" style="height:100px;"/>
+    </div>
+  </body>
+</html>
